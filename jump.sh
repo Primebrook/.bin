@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 project_dirs=$(ls ~/projects/ | tr ' ' '\n')
 zappi_dirs=$(ls ~/zappi/ | tr ' ' '\n')
 
@@ -13,4 +15,4 @@ else
   path="$HOME/zappi/$selected"
 fi
 
-tmux neww -n "$selected" -c "$path"
+/opt/homebrew/bin/tmux neww -n "$selected" -c "$path"
