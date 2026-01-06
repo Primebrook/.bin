@@ -35,7 +35,7 @@ new_note() {
 
 ## What do I want to achieve today? (Intention)
 
-## Tasks
+## Tasks ✅🟡❌
 
 EOF
 }
