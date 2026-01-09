@@ -19,9 +19,8 @@ Notes are stored in `~/personal/second_brain/periodic_notes/daily_notes/DD-MM-YY
 **Requires:** `gdate` (install with `brew install coreutils`)
 
 **Example Usage**:
-https://github.com/user-attachments/assets/92914dd6-f80f-43fe-b2b8-1488b39171ef
-[Example Usage](./assets/day_demo.mov)
 
+<video src="/assets/day_demo.mov" width="320" height="240" controls></video>
 
 
 ---
