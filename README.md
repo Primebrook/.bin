@@ -20,6 +20,8 @@ Notes are stored in `~/personal/second_brain/periodic_notes/daily_notes/DD-MM-YY
 
 **Example Usage**:
 https://github.com/user-attachments/assets/92914dd6-f80f-43fe-b2b8-1488b39171ef
+[Example Usage](./assets/day_demo.mov)
+
 
 
 ---
