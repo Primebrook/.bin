@@ -1,14 +1,14 @@
 #!/bin/zsh
 
-SECOND_BRAIN="$HOME/personal/second_brain"
+SECOND_BRAIN_NOTES="$HOME/personal/second_brain/notes"
 
 echo "Enter the filename: "
 read filename
 
 if [ "$1" = "-q" ]; then
-    file="$SECOND_BRAIN/quick_access/$filename.md"
+    file="$SECOND_BRAIN_NOTES/quick_access/$filename.md"
 else
-    file="$SECOND_BRAIN/$filename.md"
+    file="$SECOND_BRAIN_NOTES/$filename.md"
 fi
 
 cd "$SECOND_BRAIN" || exit
