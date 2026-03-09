@@ -4,7 +4,12 @@ SECOND_BRAIN="$HOME/personal/second_brain"
 
 echo "Enter the filename: "
 read filename
-file="$SECOND_BRAIN"'/inbox/'$filename.md
+
+if [ "$1" = "-v" ]; then
+    file="$SECOND_BRAIN/inbox/$filename.md"
+else
+    file="$SECOND_BRAIN/$filename.md"
+fi
 
 cd "$SECOND_BRAIN" || exit
 
