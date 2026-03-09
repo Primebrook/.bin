@@ -32,6 +32,9 @@ new_note() {
 
   cat <<EOF >"$file"
 # $target_date
+---
+tags: [periodic/daily]
+---
 
 ## What do I want to achieve today? (Intention)
 
