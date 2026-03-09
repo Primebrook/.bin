@@ -5,8 +5,8 @@ SECOND_BRAIN="$HOME/personal/second_brain"
 echo "Enter the filename: "
 read filename
 
-if [ "$1" = "-v" ]; then
-    file="$SECOND_BRAIN/inbox/$filename.md"
+if [ "$1" = "-q" ]; then
+    file="$SECOND_BRAIN/quick_access/$filename.md"
 else
     file="$SECOND_BRAIN/$filename.md"
 fi
