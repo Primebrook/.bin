@@ -25,6 +25,17 @@ monday=$(gdate -d "$ref_date -$((dow - 1)) day" +"%d-%m-%Y")
 week_num=$(gdate -d "$ref_date" +%V)          # ISO week number
 year=$(gdate -d "$ref_date" +%G)              # ISO week-numbering year
 
+# Pretty Monday date, e.g. "15th June 2026".
+mon_day=$(gdate -d "$ref_date -$((dow - 1)) day" +%-d)
+case "$mon_day" in
+  11|12|13) suffix="th" ;;
+  *1) suffix="st" ;;
+  *2) suffix="nd" ;;
+  *3) suffix="rd" ;;
+  *)  suffix="th" ;;
+esac
+monday_pretty="${mon_day}${suffix} $(gdate -d "$ref_date -$((dow - 1)) day" +'%B %Y')"
+
 file="$NOTES_DIR/$monday.md"
 
 cd "$SECOND_BRAIN" || exit
@@ -34,7 +45,7 @@ new_note() {
   touch "$file"
 
   cat <<EOF >"$file"
-# Week $week_num, $year (w/c $monday)
+# Week $week_num, $year (w/c $monday_pretty)
 ---
 tags: [periodic/weekly]
 ---
