@@ -50,9 +50,12 @@ new_note() {
 tags: [periodic/weekly]
 ---
 
-## What do I want to achieve this week? (Intention)
+✅
+🟡
+❌
+⌛
 
-## Tasks ✅🟡❌⌛
+## ToDo
 
 EOF
 }
